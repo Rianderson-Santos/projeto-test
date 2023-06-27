@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+let nome, idade, salario, estadoCivil;
+
+while (true) {
+  nome = prompt("Digite seu nome: ");
+  if (nome.length > 3) {
+    break;
+  } else {
+    alert("O nome deve ter mais de 3 caracteres. Por favor, tente novamente.");
+  }
+}
+
+while (true) {
+  idade = parseInt(prompt("Digite sua idade: "));
+  if (idade >= 0 && idade <= 150) {
+    break;
+  } else {
+    alert("A idade deve estar entre 0 e 150. Por favor, tente novamente.");
+  }
+}
+
+while (true) {
+  salario = parseFloat(prompt("Digite seu salário: "));
+  if (salario > 0) {
+    break;
+  } else {
+    alert("O salário deve ser maior que zero. Por favor, tente novamente.");
+  }
+}
+
+while (true) {
+  estadoCivil = prompt("Digite seu estado civil (solteiro, casado, viuvo, divorciado,): ");
+  if (estadoCivil === 'solteiro' || estadoCivil === 'casado' || estadoCivil === 'viuvo' || estadoCivil === 'divorciado') {
+    break;
+  } else {
+    alert("Estado civil inválido. Por favor, tente novamente.");
+  }
+}
+
+alert("Nome: " + nome);
+alert("Idade: " + idade);
+alert("Salário: " + salario);
+alert("Estado Civil: " + estadoCivil);
+    </script>
+</body>
+</html>
